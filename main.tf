@@ -10,7 +10,7 @@ terraform {
 provider "filedemo" {}
 
 resource "filedemo_file" "a_file" {
-  filename = "a_file.txt"
+  filename = "a_file_v2.txt"
   content  = <<EOT
 hello
 world!!!
