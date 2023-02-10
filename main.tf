@@ -8,3 +8,11 @@ terraform {
 }
 
 provider "filedemo" {}
+
+resource "filedemo_file" "a_file" {
+  filename = "a_file.txt"
+  content  = <<EOT
+hello
+world
+EOT
+}
