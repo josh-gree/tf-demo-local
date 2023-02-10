@@ -24,6 +24,8 @@ hello
 world!!!
 
 This is a new file
+
+I have modified it!
 EOT
 }
 
