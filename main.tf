@@ -35,10 +35,18 @@ resource "random_id" "bucket_prefix" {
 
 resource "google_storage_bucket" "default" {
   name          = "${random_id.bucket_prefix.hex}-bucket-tfstate"
+  project       = "data-dev-337414"
   force_destroy = false
   location      = "EU"
   storage_class = "STANDARD"
   versioning {
     enabled = true
+  }
+}
+
+terraform {
+  backend "gcs" {
+    bucket = "3d23ece0005d2833-bucket-tfstate"
+    prefix = "terraform/state"
   }
 }
