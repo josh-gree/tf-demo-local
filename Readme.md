@@ -1,3 +1,11 @@
+- Create Plan
+
+```
+> terraform plan
+OR
+> terraform plan -out plan
+```
+
 - View plan with;
 
 ```
