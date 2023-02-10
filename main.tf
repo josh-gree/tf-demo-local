@@ -16,3 +16,13 @@ hello
 world!!!
 EOT
 }
+
+resource "filedemo_file" "another_file" {
+  filename = "another_file.txt"
+  content  = <<EOT
+hello
+world!!!
+
+This is a new file
+EOT
+}
